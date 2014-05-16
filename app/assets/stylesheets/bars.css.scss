@@ -1,0 +1,28 @@
+// Place all the styles related to the bars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+body {
+	padding-top:50px;
+	background-image: asset-data-url("beer.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	font-family:"Lato";
+	background-attachment: fixed;
+}
+
+.container-fluid{
+	width:960px;	
+	margin:0 auto;
+	background-color:rgba(255,255,255,0.75);
+}
+
+h1{
+	text-align:center;
+}
+
+.navbar-right {
+	padding-right:20px;
+}

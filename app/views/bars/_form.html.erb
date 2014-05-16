@@ -1,0 +1,6 @@
+<%= form_for @bar do |b| %>
+	Name:  <%= b.text_field :name %>
+	Category:  <%= b.select :category, [['Select a Type','Select a Type'], ['Dive','Dive'],['Lounge','Lounge'],['Sports Bar','Sports Bar'], ['Pub', 'Pub']] %>
+
+	<%= b.submit %>
+	<% end %>
