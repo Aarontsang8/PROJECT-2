@@ -1,5 +1,5 @@
 class BarsController < ApplicationController
-   def index
+  def index
     @bars = Bar.all
   end
 
@@ -22,6 +22,7 @@ class BarsController < ApplicationController
   end
 
   def show
+    @bar = Bar.find(params[:id])
   end
   
   def update
@@ -30,13 +31,12 @@ class BarsController < ApplicationController
   def destroy
     @bar = Bar.find(params[:id])
     @bar.destroy
-    
     redirect_to :root
   end
 
 
-private
-  def verify_logged_in
+  private
+    def verify_logged_in
     if !current_user
       flash[:error] = "You must log in!!!"
       redirect_to new_sessions_path

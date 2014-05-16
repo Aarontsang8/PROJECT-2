@@ -12,9 +12,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params.require(:user).permit(:name))
+    @user = User.new(params.require(:user).permit(:name, :password, :email))
       if @user.save
-        redirect_to users_path
+        redirect_to bars_path
       else
         render 'new'
       end

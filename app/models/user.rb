@@ -1,15 +1,13 @@
+require "bcrypt"
 class User
   include Mongoid::Document
   field :name, type: String
   field :email, type: String
-  field :password, type: String
-  has_and_belongs_to_many :bars
-
+  field :password_digest, type: String
 
   def password
     @password
   end
-
 
   def password=(new_password)
     @password = new_password

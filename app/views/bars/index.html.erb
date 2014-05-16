@@ -1,18 +1,17 @@
 <h1>It's HAPPY HOUR somewhere!</h1>
 
-Your current list of bars!
-<br />
+<h2> <u>Bar List!</u> </h2>
 <br />
 	<dl>
 	<% @bars.each do |b| %>
-	
-		<dt>Name: <%= b.name %></dt>
-		Category:<%= b.category %>
+		Name: <%= link_to bar_path b do %>
+		<dt><%= b.name %></dt>
+		
 		<dt><%= link_to 'Remove this Bar', b, method: :delete %></dt>
 		<br />
 		<br />
 	</dl>
 	<% end %>
-
+		<% end %>
 
 
