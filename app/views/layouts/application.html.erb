@@ -29,12 +29,12 @@
         <li><%= link_to "New Bar", new_bar_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <%# if !current_user %>
+        <% if !current_user %>
           <li><%= link_to "Sign Up", new_user_path %></li>
           <li><%= link_to "Sign In", new_sessions_path %></li>
-        <%# else %>
+        <% else %>
           <li><%= link_to "Sign Out", sessions_path, :method => :delete %></li>
-        <%# end %>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   <!-- /.container-fluid -->

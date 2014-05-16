@@ -9,11 +9,11 @@ class SessionsController < ApplicationController
       flash[:error] = "Invalid email/password combination"
       render 'new'
     else
-      session[:remember_token] = @user.id.to_s
+      session[:remember_token] = @user.id
       @current_user = @user
+      flash[:success] = "You have LOGGED IN successfully!"
       redirect_to bars_path
     end
-
   end
 
   def destroy
