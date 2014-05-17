@@ -13,17 +13,12 @@ body {
 	background-attachment: fixed;
 }
 
-.container-fluid{
-	width:960px;	
-	margin:0 auto;
-	background-color:rgba(255,255,255,0.75);
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
 
-h1{
+
+#greeting{
 	text-align:center;
+	color:white;
+	font-size: 150px;
 }
 
 .navbar-right {
@@ -33,4 +28,13 @@ h1{
 p {
 	font-size: 100px;
 	color:purple;
+}
+
+#dof {
+	padding-top: 16px;
+	color:red;
+}
+
+.thumbnail {
+	background-color: rgba(255,255,255,0.8);
 }

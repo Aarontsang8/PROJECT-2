@@ -1,17 +1,21 @@
-<h1>It's HAPPY HOUR somewhere!</h1>
 
-<h2> <u>Bar List!</u> </h2>
-<br />
-	<dl>
+																																										
+<div class="row">
 	<% @bars.each do |b| %>
-		Name: <%= link_to bar_path b do %>
-		<dt><%= b.name %></dt>
-		
-		<dt><%= link_to 'Remove this Bar', b, method: :delete %></dt>
-		<br />
-		<br />
-	</dl>
-	<% end %>
-		<% end %>
-
-
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="" alt="...">
+      <div class="caption">
+      	<dl>
+      	Name: <%= link_to bar_path b do %>
+        	<dt><%= b.name %></dt>
+        </dl>
+        
+        <button><button>
+        <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>
