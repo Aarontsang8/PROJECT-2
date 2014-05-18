@@ -2,9 +2,11 @@
 
 <div id ="signup">
 <%= form_for @user do |f| %>
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
+  Name: <%= f.text_field :name, :placeholder => "Type your Name" %>
+  Email: <%= f.text_field :email, :placeholder => "Type your Email" %>
+  Password: <%= f.password_field :password, :placeholder => "Enter your Password" %>
   <%= f.submit %>
 <% end %>
 </div>
+
+ 

@@ -5,14 +5,27 @@
 @import 'bootstrap';
 
 body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	padding-top:50px;
 	background-image: asset-data-url("beer.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
 	font-family:"Lato";
 	background-attachment: fixed;
 }
 
+#barform{
+	background:white;
+	text-align:center;
+}
+
+.text {
+	
+}
 
 
 #greeting{

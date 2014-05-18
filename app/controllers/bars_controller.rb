@@ -29,6 +29,12 @@ before_action :authenticate_user
   end
   
   def update
+    @bar = Bar.find(params[:id])
+    if @bar.update(params.require(:bar).permit(:name, :bar_id=> []))
+      redirect_to bars_path
+    else
+      render 'edit'
+    end
   end
 
   def destroy
