@@ -51,6 +51,8 @@ GEM
     connection_pool (2.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    font-awesome-sass (4.1.0)
+      sass (~> 3.2)
     genghis (1.4.1)
       mongo (>= 1.2.0)
     hike (1.2.3)
@@ -139,6 +141,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  font-awesome-sass
   genghis (~> 1.4.1)
   jbuilder (~> 1.2)
   jquery-rails

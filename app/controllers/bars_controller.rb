@@ -11,7 +11,7 @@ before_action :authenticate_user
   end
 
   def create
-    @bar = Bar.new(params.require(:bar).permit(:name, :category))
+    @bar = Bar.new(params.require(:bar).permit(:name, :category, :location, :contact))
       if @bar.save
         redirect_to bars_path
       else
@@ -30,7 +30,7 @@ before_action :authenticate_user
   
   def update
     @bar = Bar.find(params[:id])
-    if @bar.update(params.require(:bar).permit(:name, :bar_id=> []))
+    if @bar.update(params.require(:bar).permit(:name, :category, :location, :contact, :bar_id=> []))
       redirect_to bars_path
     else
       render 'edit'

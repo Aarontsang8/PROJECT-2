@@ -1,9 +1,24 @@
 <%= form_for @bar do |b| %>
-<div id = "barform">
-	<span class = "text">Name:</span><%= b.text_field :name %> <br />
-	<span class = "text">Category:</span>  <%= b.select :category, [['Select a Type','Select a Type'], ['Dive','Dive'],['Lounge','Lounge'],['Sports Bar','Sports Bar'], ['Pub', 'Pub']] %> <br />
-	<span class = "text">Location:</span> <%= b.text_field :location %> <br />
-	<span class = "text">Contact</span> <%= b.text_field :contact %> <br />
-</div>
+<div class = "barform">
+	<div class = "smallerform">
+	 <span class ="text">Name:</span> <%= b.text_field :name %> <br />
+	</div>
 
-	<% end %>
+	<div class = "smallerform">
+	  <span class = "text">Category:</span>  <%= b.select :category, [['Select a Type','Select a Type'], ['Dive','Dive'],['Lounge','Lounge'],['Sports Bar','Sports Bar'], ['Pub', 'Pub'], ['Karaoke', 'Karaoke'], ['Hookah', 'Hookah'], ['Jazz','Jazz']] %> <br />
+	</div>
+
+	<div class = "smallerform">
+	  <span class = "text">Location:</span> <%= b.text_field :location %> <br />
+	</div>
+
+	<div class = "smallerform">
+		<span class = "text">Contact</span> <%= b.text_field :contact %> <br />
+	</div>
+
+	<div class = "smallerform"><%= b.submit %></div>
+</div>
+<% end %>
+
+
+

@@ -1,12 +1,20 @@
-<h1>New User</h1>
+
 
 <div id ="signup">
+	<h1>New User</h1>
 <%= form_for @user do |f| %>
+<div class = "smallerform">
   Name: <%= f.text_field :name, :placeholder => "Type your Name" %>
+</div>
+
+<div class = "smallerform">
   Email: <%= f.text_field :email, :placeholder => "Type your Email" %>
+</div>
+
+<div class = "smallerform">
   Password: <%= f.password_field :password, :placeholder => "Enter your Password" %>
+</div>
   <%= f.submit %>
 <% end %>
 </div>
 
- 

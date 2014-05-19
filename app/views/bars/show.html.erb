@@ -1,11 +1,14 @@
-
-<h2> Information Page  </h2>
-
-	<div id = "barshow">
+<div class = "showpage">
+		<h2> Information Page</h2>
 		<strong>Name:</strong> <%= @bar.name %>
+		<br />
+		<strong>Location:</strong> <%= @bar.location %>
+		<br />
+		<strong>Contact:</strong> <%= @bar.contact %>
 		<br />
 		<strong>Category:</strong> <%= @bar.category %>
 	</div>
 
 
 <button id="rsvpbutton" type="button"><%= link_to "Edit this Bar", edit_bar_path %></button>
+

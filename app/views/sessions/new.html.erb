@@ -1,7 +1,18 @@
-<h1>Login</h1>
 
+
+<div class = "barform">
+	<h1>Login</h1>
 <%= form_for :session, :url => sessions_path do |f| %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  <%= f.submit "Login" %>
-<% end %>
+	<div class = "smallerform">
+	  Email: <%= f.text_field :email %>
+	</div>
+
+	<div class = "smallerform">
+	  Password: <%= f.password_field :password %>
+	</div>
+
+	<div class = "smallerform">
+	  <%= f.submit "Login" %>
+	 </div>
+	<% end %>
+</div>

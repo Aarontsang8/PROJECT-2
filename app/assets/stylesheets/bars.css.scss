@@ -18,13 +18,33 @@ body {
 	background-attachment: fixed;
 }
 
-#barform{
-	background:white;
-	text-align:center;
+.barform{
+	background-image: asset-data-url("graph-paper.png");
+	opacity: 0.8;
+	width:auto;
 }
 
-.text {
+.showpage{
+	background-image: asset-data-url("graph-paper.png");
+	opacity: 0.8;
+	width:auto;
+	font-size:40px;
+}
 	
+
+
+.smallerform{
+	padding:25px;	
+}
+
+.text {	
+	float:left;
+	font-size:20px;
+	width:120px;
+}
+
+#newbarform {
+	color:white
 }
 
 
@@ -50,4 +70,8 @@ p {
 
 .thumbnail {
 	background-color: rgba(255,255,255,0.8);
+}
+
+.btn-lg {
+	padding: 13px 16px;
 }
