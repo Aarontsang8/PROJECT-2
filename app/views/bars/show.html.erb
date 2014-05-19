@@ -1,14 +1,18 @@
 <div class = "showpage">
-		<h2> Information Page</h2>
-		<strong>Name:</strong> <%= @bar.name %>
+		<h1> <u><em>Information Page</u></em></h1>
+			<em>Name:</em> &nbsp;<span class = "editlabel"><%= @bar.name %></span>
 		<br />
-		<strong>Location:</strong> <%= @bar.location %>
+			<em>Location:</em>&nbsp; <%= @bar.location %>
 		<br />
-		<strong>Contact:</strong> <%= @bar.contact %>
+			<em>Contact:</em>&nbsp; <%= @bar.contact %>
 		<br />
-		<strong>Category:</strong> <%= @bar.category %>
+			<em>Category:</em>&nbsp; <%= @bar.category %>
 	</div>
 
 
-<button id="rsvpbutton" type="button"><%= link_to "Edit this Bar", edit_bar_path %></button>
+<% if !current_user %>
+NOPE
+<% else %>
+<button id="edit" type="button"><%= link_to "Edit this Bar", edit_bar_path %></button>
+<% end %>
 
