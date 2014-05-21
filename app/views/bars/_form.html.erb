@@ -13,11 +13,13 @@
 	</div>
 
 	<div class = "smallerform">
-		<span class = "text">Contact</span> <%= b.text_field :contact %> <br />
+	   <span class = "text">Contact</span> <%= b.text_field :contact %> <br />
 	</div>
 
 	<div class = "smallerform"><%= b.submit %></div>
-</div>
+
+		<%= b.file_field :image %> 
+
 <% end %>
 
 

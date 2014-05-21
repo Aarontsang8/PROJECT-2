@@ -1,3 +1,4 @@
+
 <div class = "showpage">
 		<h1> <u><em>Information Page</u></em></h1>
 			<em>Name:</em> &nbsp;<span class = "editlabel"><%= @bar.name %></span>
@@ -9,10 +10,8 @@
 			<em>Category:</em>&nbsp; <%= @bar.category %>
 	</div>
 
-
-<% if !current_user %>
-NOPE
-<% else %>
+	<%=  image_tag @bar.image.url %>
+<button id ="delete" type = "button"><%= link_to "Delete This Bar", @bars, method: :delete %></button>
 <button id="edit" type="button"><%= link_to "Edit this Bar", edit_bar_path %></button>
-<% end %>
+
 
