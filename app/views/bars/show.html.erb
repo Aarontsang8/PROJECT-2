@@ -10,7 +10,7 @@
 			<em>Category:</em>&nbsp; <%= @bar.category %>
 	</div>
 
-	<%=  image_tag @bar.image.url %>
+<%= image_tag @bar.image.url %>
 <button id ="delete" type = "button"><%= link_to "Delete This Bar", @bars, method: :delete %></button>
 <button id="edit" type="button"><%= link_to "Edit this Bar", edit_bar_path %></button>
 

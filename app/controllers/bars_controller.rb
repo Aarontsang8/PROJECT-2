@@ -30,7 +30,7 @@ before_action :authenticate_user
   
   def update
     @bar = Bar.find(params[:id])
-    if @bar.update(params.require(:bar).permit(:name, :category, :image, :location, :contact))
+    if @bar.update(params.require(:bar).permit(:name, :category, :location, :contact, :image))
       redirect_to bars_path
     else
       render 'edit'
